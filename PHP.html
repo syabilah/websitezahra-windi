@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengertian dan Manfaat PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        ul {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pengertian PHP</h1>
+<p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman yang digunakan terutama untuk pengembangan web. PHP adalah bahasa scripting yang berjalan di sisi server, yang memungkinkan pengembang untuk membuat halaman web yang dinamis dan interaktif.</p>
+
+<h2>Manfaat PHP</h2>
+<ul>
+    <li>Pengembangan web dinamis.</li>
+    <li>Mendukung berbagai database.</li>
+    <li>Fleksibilitas dalam pengembangan aplikasi.</li>
+    <li>Open source dan gratis untuk digunakan.</li>
+</ul>
+
+<h2>Fungsi PHP</h2>
+<ul>
+    <li>Membaca dan menulis file.</li>
+    <li>Memproses data dari formulir.</li>
+    <li>Mengelola session dan cookies.</li>
+    <li>Pengolahan gambar.</li>
+</ul>
+
+<h2>Kelebihan PHP</h2>
+<ul>
+    <li>Mudah dipelajari dan digunakan.</li>
+    <li>Kompatibilitas dengan berbagai sistem operasi dan server.</li>
+    <li>Komunitas besar dan banyak sumber daya.</li>
+    <li>Performa yang baik dalam pengolahan data.</li>
+</ul>
+
+<h2>Kekurangan PHP</h2>
+<ul>
+    <li>Keamanan yang perlu diperhatikan.</li>
+    <li>Kurang terstruktur dalam proyek besar.</li>
+    <li>Performa mungkin tidak secepat beberapa bahasa lain.</li>
+</ul>
+
+<h2>Contoh Kode PHP</h2>
+<pre>
+<?php
+// Menampilkan Hello, World!
+echo "Hello, World!";
+
+// Menghubungkan ke Database MySQL
+$servername = "localhost";
+$username = "username"; // Ganti dengan username database Anda
+$password = "password"; // Ganti dengan password database Anda
+$dbname = "database_name"; // Ganti dengan nama database Anda
+
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Memeriksa koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
+echo "Koneksi berhasil!<br>";
+
+// Menutup koneksi
+$conn->close();
+?>
+</pre>
+
+</body>
+</html>
